@@ -1,0 +1,51 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parentOutput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.parentOutput input,
+.btns button {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btns button {
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btns button:hover {
+    background-color: #2980b9;
+}
+
+.btns button[value="AC"],
+.btns button[value="DEL"],
+.btns button[value="="] {
+    background-color: #e74c3c;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btns button[value="AC"]:hover,
+.btns button[value="DEL"]:hover,
+.btns button[value="="]:hover {
+    background-color: #2bc049;
+}
